@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBSITE</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- SECTION 1 -->
+    <div class="bgimg2-container">
+		<nav>
+            <img src="logo.png" width="120px" height="110px" class="logo" >
+        <ul id="menuList">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="hogwarts.html">Hogwart Teams</a></li>
+        </ul>
+		
+		<div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+        </nav>
+    </div> <!-- END OF SECTION 1 -->
+	
+	<!-- SECTION 2 -->
+	<div class="section2">
+		    <img src="trainimg.png" alt="hogwarts train" class="trainimg">
+			
+		<div class="imgtext">
+		    <h2> Platform 9-3/4</h2>
+			<p>	Quikly, Everyone Get On The Hogwarts Express And<br>Let's make 
+			Our Way to The Wizarding World's Most<br> Magnificent School</p>  
+	        
+			<a href="hogwarts.html"><button class="buttontrain">Get the Train To Explore</button></a>
+		</div>
+	</div>  <!-- END OF SECTION 2 -->
+	
+	 <!-- SET 1 -->
+	<div class="movietext">
+	    <h1> RELATED MOVIES </h1>
+		<p> Click the Image to Watch</p>
+	</div>
+    <div class="card-container">		
+        <div class="card">
+                <a href="https://youtu.be/0d0W4X7klHQ?feature=shared"><img src="ep1.jpg" alt="Card1"></a>
+        </div>
+
+        <div class="card">
+                <a href="https://youtu.be/uwieFbajGxw?si=xNHJYKloX1TSHQN3"><img src="ep2.jpg" alt="Card2"></a>
+        </div>
+		
+		<div class="card">
+                <a href="https://youtu.be/d1p4d5kXPlM?si=JD84Pr9teCDBOYUY"><img src="ep3.jpg" alt="Card3"></a>
+		</div>
+		
+		<div class="card">
+                <a href="https://youtu.be/8szpId3oWlE?si=Ih_zvzemIpVqcM0I"><img src="ep4.jpg" alt="Card4"></a>
+		</div>
+    </div> <!-- SET 1 -->
+	
+	 <!-- SET 2 -->
+   <div class="card-container2">		
+        <div class="card">
+                <a href="https://youtu.be/ZMeFnwsxh6s?si=PR0Pry1lGGazxnsv"><img src="ep5.jpg" alt="Card1"></a>
+        </div>
+		
+        <div class="card">
+                <a href="https://youtu.be/d40X5WkOjxg?si=AfLmvdRu1bYEjczc"><img src="ep6.jpg" alt="Card2"></a>
+        </div>
+		
+		<div class="card">
+                <a href="https://youtu.be/4D3IfZOWLHY?si=SDfkrvdRfr0iuqUl"><img src="ep7 p1.jpg" alt="Card3"></a>
+		</div>
+		
+		<div class="card">
+                <a href="https://youtu.be/j2LpN4H85cg?si=8Yb3glbit7MyGqNL"><img src="ep7 p2.jpg" alt="Card4"></a>
+		</div>
+    </div> <!-- SET 2 -->
+	
+	<script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+	
+</body>
+</html>

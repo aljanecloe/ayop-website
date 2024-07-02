@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	color:white;
+	text-decoration: none;
+}
+
+body{
+	background-color:#372E29;
+}
+
+.logo3{
+	padding:15px;
+}
+nav{
+    padding: 10px 20px 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 90px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#ECB939
+	font-family: Footlight MT Light;	
+	font-size: 18px;
+	border-radius: 13px;
+	padding: 5px 6px;
+	transition: 0.2s;
+	margin: 0 5px;
+}
+
+nav ul li a:hover{
+	color: #372E29;
+	background:#ECB939;
+}
+
+/* SET 1 */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px; 
+    padding:2px;
+    justify-content: center; 
+	
+}
+
+.card  {
+    background:#726255;
+    border: 5px solid  #ECB939;
+	color: #9FA49F;
+    border-radius: 15px;
+	animation: pulse 1s infinite alternate;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 190px; /* Fixed width for cards */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.06); 
+}
+
+.card img {
+    width: 185px;
+    height:200px;
+}
+
+.card-content {
+    padding: 13px;
+}
+
+.card-content h4 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align:Center;
+	font-family:Bell MT;
+    letter-spacing: 1px;
+	color:#9FA49F;
+} /* SET 1 */
+
+/* SET 2 */
+.card-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px; 
+    padding:50px;
+    justify-content: center; 
+	
+}
+
+.card  {
+    background:#726255;
+    border: 5px solid #ECB939;
+	color: #9FA49F;
+    border-radius: 15px;
+	animation: pulse 1s infinite alternate;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 190px; /* Fixed width for cards */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.06); 
+}
+
+.card img {
+    width: 185px;
+    height:200px;
+}
+
+.card-content {
+    padding: 13px;
+}
+
+.card-content h4 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align:Center;
+	font-family:Bell MT;
+    letter-spacing: 1px;
+	color:#9FA49F;
+} /* SET 2 */
+
+@media (max-width: 600px) {
+	.card-container{
+		display: flex;
+        flex-wrap: wrap;
+        gap: 60px; 
+        padding:20px;
+        justify-content: center; 
+	}
+	
+	.card-container2{
+		display: flex;
+        flex-wrap: wrap;
+        gap: 60px; 
+        padding:20px;
+        justify-content: center; 
+	}
+}

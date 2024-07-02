@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	color:white;
+	text-decoration: none;
+}
+
+body{
+	height:100vh;
+	background-image: linear-gradient(#1a314b,#0b0a0b);
+}
+
+.logo{
+	scale: .9;
+	transition: .3s ease;
+    display: flex;
+	cursor:pointer;
+}
+
+.logo:hover {
+	scale: .6;
+}
+
+nav{
+    padding: 10px 20px 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 90px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+	font-family: Footlight MT Light;
+	text-shadow: 1px 1px #DDB35D;	
+	font-size: 18px;
+	border-radius: 13px;
+	padding: 5px 6px;
+	transition: 0.2s;
+	margin: 0 5px;
+}
+
+nav ul li a:hover{
+	color: #11101b;
+	background:#fefefe;
+}/* CSS FOR NAVIGATION BAR */
+
+.text1{
+	position: absolute;
+    width: 100%;
+    color:#3260D1;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 2px;
+	line-height: 1.2;
+    font-family:Felix Titling;
+	font-size:15px;
+}
+
+h3{
+	color:#D8AC88;
+	letter-spacing: 2px;
+	font-size:20px;
+} /* CSS FOR TEXT 1 */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; 
+    padding:140px;
+    justify-content: center; 
+	height:80vh;
+}
+
+.card  {
+    background:#4D0011;
+    border: 5px solid #4D0011;
+	color:#D8AC88;
+    border-radius: 15px;
+	animation: pulse 1s infinite alternate;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 190px; /* Fixed width for cards */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.06); 
+}
+
+.card img {
+    width: 185px;
+    height:200px;
+}
+
+.card-content {
+    padding: 13px;
+}
+
+.card-content h4 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align:Center;
+	font-family:Bell MT;
+    letter-spacing: 1px;
+	color:#828DA8;
+}
+
+.container-button{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	padding-bottom:0px 35px;
+	
+}
+
+/*RESPONSIVE FOR TEXT1 AND LOGO2 */
+@media (max-width: 600px) {
+	.text1{
+		padding:20px;
+		font-size:10px;
+	}
+	
+	.logo2{
+		width:70px;
+		height:70px;
+	}
+ }
+ /*RESPONSIVE FOR CARDS */
+ @media (max-width: 600px){
+	 body{
+		 height:130vh;
+	 }
+    .card-container {
+        gap: 12px; 
+        padding: 100px;
+		height:100vh;
+    }
+	
+	.card {
+        width: 40%; 
+		display:flex;
+		flex-direction: column;
+		height:150px;
+    }
+	
+	.card img {
+        width: 120px;
+        height:90px;
+    }
+	
+	.card .card-content h4 {
+        font-size: 12px;
+        text-align:Center;
+	    font-family:Bell MT;
+        letter-spacing: 1px;
+	    color:#828DA8;
+    }
+	
+	
+ }

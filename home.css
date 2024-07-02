@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	color:white;
+	text-decoration: none;
+}
+
+body{
+	height:100vh;
+	background-color:#000000;
+}
+
+/* SECTION 1 */
+.bgimg2-container {
+    background-image: url("bgimg2.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display:fixed;
+	overflow: hidden;
+}
+
+.logo{
+	scale: .9;
+	transition: .3s ease;
+    display: flex;
+	cursor:pointer;
+}
+
+.logo:hover {
+	scale: .6;
+}
+
+nav{
+    padding: 10px 20px 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 90px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+	font-family: Footlight MT Light;
+	text-shadow: 1px 1px #DDB35D;	
+	font-size: 18px;
+	border-radius: 13px;
+	padding: 5px 6px;
+	transition: 0.2s;
+	margin: 0 5px;
+}
+
+nav ul li a:hover{
+	color: #11101b;
+	background:#fefefe;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+ /* END OF SECTION 1 */
+ 
+ /* SECTION 2 */
+ .section2{
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+	padding:60px;
+ }
+ 
+ .trainimg{
+	max-width: 650px;
+    height: 550px;
+    flex: 1 1 auto;
+ }
+ 
+ .imgtext {
+    flex: 1 1 auto;
+    padding: 85px;
+}
+
+h2{
+	color:#AB892B;
+	font-size:40px;
+	line-height:1.5;
+	font-family:Algerian;
+}
+
+p{
+	color:#FFFFFF;
+	line-height:1.5;
+	word-spacing:.8px;
+}
+
+.buttontrain {
+	padding: 10px;
+    margin-top: 20px;
+    background-color: black; 
+    color: #AB892B;
+    border: 2px solid ;
+	border-color:#195350 black;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.buttontrain:hover{
+	border: solid ;
+	border-color:#195350;
+	background-color: #195350;
+	transform: scale(1.1);
+}
+ /* END OF SECTION 2 */
+ 
+ /* SET 1 */
+.movietext{
+	text-align:Center;
+	padding:15px;
+	font-family:Book Antiqua;
+}
+
+h1{
+	color:#B0B48F;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; 
+    padding:60px;
+    justify-content: center; 
+	
+}
+
+.card  {
+    background:#726255;
+    border: 5px solid  #185112;
+	color: #9FA49F;
+    border-radius: 15px;
+	animation: pulse 1s infinite alternate;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 190px; /* Fixed width for cards */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.06); 
+}
+
+.card img {
+    width: 185px;
+    height:250px;
+}
+
+.card-content {
+    padding: 13px;
+}
+
+.card-content h4 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align:Center;
+	font-family:Bell MT;
+    letter-spacing: 1px;
+	color:#9FA49F;
+} /* SET 1 */
+
+/* SET 2 */
+.card-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; 
+    padding:20px;
+    justify-content: center; 
+	
+}
+
+.card  {
+    background:#726255;
+    border: 5px solid  #185112;
+	color: #9FA49F;
+    border-radius: 15px;
+	animation: pulse 1s infinite alternate;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 190px; /* Fixed width for cards */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.06); 
+}
+
+.card img {
+    width: 185px;
+    height:250px;
+}
+
+.card-content {
+    padding: 13px;
+}
+
+.card-content h4 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align:Center;
+	font-family:Bell MT;
+    letter-spacing: 1px;
+	color:#9FA49F;
+} /* SET 2 */
+@media (max-width: 768px) {
+    .text1 {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+	
+    .section2 {
+        flex-direction: column;
+		padding:10px;
+    }
+    .imgtext {
+        padding: 2px;
+    }
+		
+	h1{
+		padding:20px;
+	}
+}
+
+
+ @media (max-width: 600px) {
+
+	nav{
+		background:#22282b;
+		opacity: 0.8;
+	}
+	
+	 nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background:#22282b;
+        gap: 0;	
+        overflow: hidden;
+    }
+	
+	nav ul li{
+        padding: 15px;
+        padding-top: 10px;
+    }
+	
+	.menu-icon{
+        display: block;
+    }
+	
+	 #menuList{
+        transition: all 0.8s;
+    }
+	
+	.card-container{
+		display: flex;
+        flex-wrap: wrap;
+        gap: 60px; 
+        padding:20px;
+        justify-content: center; 
+	}
+ }
+ 

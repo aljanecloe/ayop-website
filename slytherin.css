@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	color:white;
+	text-decoration: none;
+}
+
+body{
+	height:100vh;
+}
+
+/* SECTION 1 */
+.slytherin-container{
+	background-image: url("bgimg3.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display:fixed;
+	overflow: hidden;
+}
+
+.logo3{
+	padding:10px;
+}
+nav{
+    padding: 10px 20px 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 90px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #B0B48F;
+	font-family: Footlight MT Light;	
+	font-size: 18px;
+	border-radius: 13px;
+	padding: 5px 6px;
+	transition: 0.2s;
+	margin: 0 5px;
+}
+
+nav ul li a:hover{
+	color: #060b0b;
+	background:#316630;
+}
+
+.text{
+    text-align: center;
+	padding:400px;
+	color:#9FA49F;
+	font-family:Footlight MT Light;	
+}
+
+.button1{
+	padding:25px;
+	font-family:Footlight MT Light;	
+	font-size:18px;
+}
+
+.button{
+	color:#B0B48F;
+	padding:6px;
+	border:3px solid #172d25;
+	border-radius:10px;
+	background:#172d25;
+}
+
+.button1:hover {
+    transform: scale(1.1);
+} /*CSS FOR BUTTON */
+
+
+
+
+/* END OF SECTION 1 */
+ 
+@media (max-width: 600px) {
+	body{
+		height:100vh;
+		overflow:hidden;
+	}
+	
+	.text{
+        position:absolute;
+	    text-align:center;
+	    align-items:left;
+	    justify-content:center;
+		font-size:15px;
+	    padding:140px;
+    }
+
+.button1{
+	padding:25px;
+}
+.button{
+	color:#B0B48F;
+	padding:6px;
+	border:3px solid #172d25;
+	border-radius:10px;
+	background:#172d25;
+	font-family:Footlight MT Light;
+}
+
+.button:hover {	
+    transform: scale(1.1);
+}
+}
